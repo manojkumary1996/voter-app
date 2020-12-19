@@ -1,0 +1,19 @@
+<div class="card container mt-3">
+    <div class="row mt-5">
+        <div class="offset-sm-2 col-sm-8">
+            <div class="card text-blank border-0">
+                <div class="card-body">
+                    <div class="text-center" *ngIf="vote(age)">
+                        <label class="text-center">Congrualtions! {{name}},you can vote.</label>
+                    </div>
+                    <div class="text-center" *ngIf="!vote(age)">
+                        <label class="text-center">Sorry {{name}},you cannot vote.</label>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-warning" (click)="names()">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

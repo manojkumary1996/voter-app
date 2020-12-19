@@ -1,0 +1,20 @@
+<div class="card container mt-3">
+    <div class="row mt-5">
+        <div class="offset-sm-2 col-sm-8">
+            <div class="card text-blank border-0">
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="form-group">
+                            <label>{{name}},Please Enter Your Age</label>
+                            <input type="number" name="age" [(ngModel)]="age" placeholder="E.g. 18,37,5" class="form-control"
+                                required>
+                        </div>
+                        <button class="btn btn-block btn-warning mt-3" (click)="result()">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
